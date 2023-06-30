@@ -1,10 +1,6 @@
 import{NextResponse} from'next/server'
 // import process from 'next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss';
-import {createClient,OAuthStrategy} from '@wix/api-client';
-
-const myWixClient = createClient({
-    auth:OAuthStrategy({clientId:process.env.NEXT_PUBLIC_WIX_CLIENT_ID})
-})
+import myWixClient from "../helper.js"
 
 export async function middleware(request){
     if(!request.cookies.get('session')){
