@@ -1,6 +1,6 @@
 import{NextResponse} from'next/server'
 // import process from 'next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss';
-import myWixClient from "./helper.js"
+import {myWixClient} from "./helper.js"
 
 export async function middleware(request){
     if(!request.cookies.get('session')){
