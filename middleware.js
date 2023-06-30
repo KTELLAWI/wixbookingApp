@@ -27,4 +27,11 @@ export async function middleware(request){
 
 
     }
+    else{
+        const response = NextResponse.next();
+        return response;
+
+
+
+    }
 }
