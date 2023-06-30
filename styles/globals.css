@@ -1,0 +1,315 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    z-index: 3;
+}
+.primary {
+    background-color: rgb(2, 86, 254);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+}
+
+.secondary {
+    border: 1px solid rgb(2, 86, 254);
+    background-color: rgb(255, 255, 255);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: black;
+    margin: 5px;
+    cursor: pointer;
+
+
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://e0.pxfuel.com/wallpapers/831/284/desktop-wallpaper-int-gym-large-episodeinteractive-episode-size-1920-x-1136-episodeourcrazylovelife-episode-interactive-background-anime-places-anime-background-gymnasium.jpg');
+
+}
+
+
+.main-info-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 60px;
+    width: 450px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-info-container h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0px;
+}
+
+.main-info-container .disclaimer {
+    font-size: 12px;
+    color: rgb(126, 126, 126);
+
+}
+
+.main-info-container .button-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+
+}
+
+.main-info-container .button-container button {
+    margin: 5px;
+
+}
+
+.card {
+    display: flex;
+    border-bottom: solid 1px rgb(214, 214, 214);
+    padding: 10px;
+}
+
+.card p {
+    font-size: 13px;
+    width: 300px;
+}
+
+.card .img-container {
+    height: 100px;
+    width: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+
+}
+
+.card .img-container img {
+
+    height: 130px;
+
+}
+
+.card .text-container,
+.card .description-container {
+
+    width: 200px;
+    margin: 10px
+}
+
+.card .info-container {
+    display: flex;
+    width: 400px;
+    border-right: solid 1px rgb(214, 214, 214);
+}
+
+.card-link {
+
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+}
+
+li {
+    list-style-type: none;
+}
+
+.card h3,
+.card p {
+    max-width: 40;
+}
+
+/* .card .description-container {
+    display: flex;
+    border: 20px solid;
+    width: 100%;
+    
+
+} */
+
+.search-input {
+    position: absolute;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 20px;
+    outline: none;
+    border: solid 1px rgb(219, 219, 219);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+.search-bar-container {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    margin-right: 400px;
+    /* background-color: blue; */
+
+}
+
+.search-bar-container svg {
+    position: absolute;
+    z-index: 12;
+    top: 10px;
+    left: 10px;
+
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+
+}
+
+/* SERVICES PAGE*/
+.service-container {
+    overflow: scroll;
+    height: 100vh;
+    margin-top: 80 px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.service-container .info-container {
+    width: 700px;
+    padding: 50px;
+}
+
+.service-container .address-container {
+    width: 300px;
+    padding: 5px;
+}
+
+.service-container .schedule-card-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-bottom: solid 1px rgb(236, 236, 236);
+
+
+}
+
+.service-container .main-img-container {
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.service-container .main-img-container img {
+    height: 90%;
+}
+
+
+nav {
+    display: flex;
+}
+
+nav p {
+    font-size: 14px;
+
+}
+
+nav button.login {
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+
+}
+
+nav button.login:hover {
+    background-color: rgb(241, 241, 241);
+
+}
+
+.img-container {
+
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+
+/* minimaps */
+.mini-map-container {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.mini-map-container div {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.mapboxgl-compact {
+    display: none;
+}
+
+/* Maps */
+
+.map-container {
+    height: 100vh;
+    width: 40vw;
+
+}
+
+.map-container div {
+    width: 100%;
+    height: 100%;
+   
+}
+
+.search-container{
+    display: flex;
+   
+}
+.results-container{
+    width: 60vw;
+    height: 100vh;
+    overflow: scroll !important;
+    overflow-y:auto;
+
+    
+}
+
+.map-contain{
+    width: 10%;
+    height: 100%;
+}

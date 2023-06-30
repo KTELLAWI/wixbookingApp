@@ -9,8 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@wix/api-client": "^1.1.76",
+    "@wix/bookings": "^1.0.186",
+    "@wix/members": "^1.0.15",
+    "@wix/redirects": "^1.0.17",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+    "js-cookie": "^3.0.5",
+    "mapbox-gl": "^2.15.0",
+    "moment": "^2.29.4",
     "next": "13.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0"
