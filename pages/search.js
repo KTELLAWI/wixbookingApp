@@ -1,9 +1,9 @@
 import { useState, useEffect, useContext } from 'react';
-import Link from 'next/Link'
+import Link from "next/link";
 import { createClient, OAuthStrategy } from '@wix/api-client';
 import { services } from '@wix/bookings'
 import Cookies from 'js-cookie';
-import Card from '../components/card'
+import Card from '../components/Card'
 import {searchContext} from '../pages/_app'
 import Map from '../components/Map'
 

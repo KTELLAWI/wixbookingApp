@@ -1,6 +1,6 @@
-import Link from 'next/Link'
+import Link from "next/link";
 import '../styles/globals.css'
-import SearchBar from '../components/SearchBar';
+import SearchBar from '../components/Searchbar';
 import LoginBar from '../components/LoginBar'
 
 import { createContext, useState } from 'react';
