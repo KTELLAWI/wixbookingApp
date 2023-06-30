@@ -27,7 +27,7 @@ const LoginCallback =()=>{
         localStorage.removeItem('oauthRedirectData')
 
         try {
-            const {code , state} = myWixClient.auth.parsFromUrl()
+            const {code , state} = myWixClient.auth.parseFromUrl()
             let tokens= await myWixClient.auth.getMemberTokens(code,state, data)
             while (!tokens?.refreshToken?.value){
                 tokens= await myWixClient.auth.getMemberTokens(code,state, data)

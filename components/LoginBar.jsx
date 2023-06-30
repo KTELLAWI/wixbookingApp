@@ -61,11 +61,11 @@ console.log('authUrl',authUrl)
             <div className="item-container">
                 <p>Hello {user}</p>
             </div>
-            {member !== null || member !== undefined &&
+            {member !== null  &&
                 <button
                     className='login'
                     onClick={() => myWixClient.auth.loggedIn() ? logout() : login()}
-                >{myWixClient.auth.loggedIn() ? "Log outg" : "Log in"}
+                >{myWixClient.auth.loggedIn() ? "Logout" : "Login" }
                 </button>}
             <div className='item-container'>
                 <button className='primary' onClick={login}>
