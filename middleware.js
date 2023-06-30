@@ -6,7 +6,7 @@ export async function middleware(request){
     if(!request.cookies.get('session')){
         const response = NextResponse.next();
      
-        response.cookies.set('session',JSON.stringify(await myWixClient.auth.generateVisitorTokens())
+        response.cookies.set('session',"JSON.stringify(await myWixClient.auth.generateVisitorTokens())"
         );
         return response;
 
