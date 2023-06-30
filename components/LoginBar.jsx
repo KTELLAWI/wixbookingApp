@@ -4,13 +4,21 @@ import { createClient, OAuthStrategy } from '@wix/api-client'
 import Cookies from 'js-cookie'
 import { members } from '@wix/members'
 
+// const myWixClient = createClient({
+//     modules: {members},
+//     auth: OAuthStrategy({
+//         clientId: process.env.NEXT_PUBLIC_WIX_CLIENT_ID,
+//         // tokens: JSON.parse(Cookies.get('session') || null)
+//     })
+// })
 const myWixClient = createClient({
-    modules: {members},
+    modules: { members },
     auth: OAuthStrategy({
-        clientId: "27761eb6-dc3e-4cba-910d-602430ceca02",
+        clientId: process.env.NEXT_PUBLIC_WIX_CLIENT_ID,
         tokens: JSON.parse(Cookies.get('session') || null)
     })
 })
+
 
 const LoginBar = () => {
     const [user, setUser] = useState("k")
